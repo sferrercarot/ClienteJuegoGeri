@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Cliente1 {
     public static void main(String[] args) {
-        try (Socket socket = new Socket("10.204.223.108", 5000);
+        try (Socket socket = new Socket("10.204.223.108 ", 5000);
              BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter salida = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in))) {
